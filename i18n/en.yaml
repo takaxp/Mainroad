@@ -61,6 +61,10 @@
 - id: tags_title
   translation: Tags
 
+# External links widget
+- id: external_links_title
+  translation: External links
+
 # Footer
 - id: footer_credits
   translation: "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
