@@ -1,0 +1,15 @@
+{{- if .Site.Params.widgets.external_links }}
+<div class="widget-recent widget">
+	<h4 class="widget__title">{{ T "external_links_title" }}</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<!--
+					 <li class="widget__item"><a class="widget__link" href=""></a></li>
+			-->
+			<li class="widget__item"><a class="widget__link" href="https://takaxp.github.io/init.html" target="_blank">init.el</a></li>
+			<li class="widget__item">Thanks to <a class="widget__link" href="https://ox-hugo.scripter.co/" target="_blank">ox-hugo</a></li>
+			<li class="widget__item">Thanks to <a class="widget__link" href="https://boxicons.com/" target="_blank">boxicons</a></li>
+		</ul>
+	</div>
+</div>
+{{- end }}
