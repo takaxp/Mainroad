@@ -24,6 +24,7 @@
 	<!-- cd public/css && hugo gen chromastyles --style=native > chroma-styles.css -->
 	<link rel="stylesheet" href="{{ "css/chroma-styles.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/asin.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/youtube.css" | relURL }}">
 	{{- if not .Site.IsServer }}
 		{{ template "_internal/google_analytics_async.html" . }}
 	{{- end }}
@@ -50,5 +51,7 @@
 <script src="{{ . | relURL }}"></script>
 {{- end }}
 {{- partial "mathjax.html" . -}}
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4da1ae492a0c2d30"></script>
 </body>
 </html>
