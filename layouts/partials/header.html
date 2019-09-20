@@ -1,5 +1,6 @@
 <header class="header">
 	<div class="container">
+		{{ partial "seo_schema.html" . }}
 		<div class="logo">
 			<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
 				<div class="logo__title">{{ .Site.Title }}</div>
