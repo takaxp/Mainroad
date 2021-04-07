@@ -10,7 +10,11 @@
 	{{- end }}
 	{{- with .Site.Author.name }}
 	<div class="authorbox__header">
-		<span class="authorbox__name">{{ T "authorbox_name" . }}</span>
+		<span class="authorbox__name">{{ T "authorbox_name" . }}
+			{{- if $.Site.Author.twitter }}
+			(<a href="https://twitter.com/{{ $.Site.Author.twitter }}">@{{ $.Site.Author.twitter }}</a>)
+			{{- end }}
+		</span>
 	</div>
 	{{- end }}
 	{{- with .Site.Author.bio }}
