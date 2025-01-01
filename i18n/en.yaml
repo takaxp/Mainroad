@@ -28,7 +28,7 @@
 
 # Authorbox
 - id: authorbox_name
-  translation: "About {{ .Name }}"
+  translation: About {{ . }}
 
 # Sidebar
 - id: sidebar_warning
@@ -39,7 +39,7 @@
 
 # Search widget
 - id: search_placeholder
-  translation: "Search…"
+  translation: SEARCH... (by Google)
 
 # Languages widget
 - id: languages_title
@@ -60,6 +60,10 @@
 # Tags List widget
 - id: tags_title
   translation: "Tags"
+
+# External links widget
+- id: external_links_title
+  translation: External links
 
 # Footer
 - id: footer_credits

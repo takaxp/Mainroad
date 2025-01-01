@@ -1,0 +1,23 @@
+<div class="widget-search-lunr widget">
+	<script src="https://unpkg.com/lunr/lunr.js"></script>
+	<script src="/blog/js/lunr-langs/tinyseg.js"></script>
+	<script src="/blog/js/lunr-langs/lunr.stemmer.support.js"></script>
+	<script src="/blog/js/lunr-langs/lunr.ja.js"></script>
+  <!-- <script src="/js/require.js"></script>
+			 <script src="/js/lunr.js"></script>
+			 <script src="/js/lunr-langs/lunr.multi.js"></script> -->
+	<div>
+		<input id="search-input" type="text" placeholder="Search... (by Lunr.js) will show top 5 results" name="search-input">
+	</div>
+	<div id="search-lang">
+		<span id="search-lang-en">
+			<input id="search-lunr-en" type="radio" name="lunr-lang" value="en" onchange="setup();" checked> English
+		</span>
+		<span id="search-lang-ja">
+			<input id="search-lunr-ja" type="radio" name="lunr-lang" value="ja" onchange="setup();"> Japanese
+		</span>
+	</div>
+	<div id="header-search"></div>
+	<div id="search-results" class="container"></div>
+	<script src="{{"/blog/js/search.js" | urlize | relURL }}"></script>
+</div>
